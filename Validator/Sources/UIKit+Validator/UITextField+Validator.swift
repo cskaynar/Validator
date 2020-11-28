@@ -3,7 +3,7 @@ import UIKit
 #if os(iOS)
 extension UITextField: ValidatableInterfaceElement {
         
-    open var inputValue: String? { return text }
+    @objc open var inputValue: String? { return text }
     
     open func validateOnInputChange(enabled: Bool) {
         
